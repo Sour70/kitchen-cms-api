@@ -14,6 +14,8 @@ class ArticleController extends Controller
     //
     public function index(Request $request)
     {
+
+        
                     return response()->json(['message' => 'Logged in']);
 
         $query = Article::with('categories', 'author');
